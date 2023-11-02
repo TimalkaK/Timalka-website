@@ -1,0 +1,148 @@
+html{
+  font-size: 62.5%; /* 75px - 7.5rem */
+  
+  background: url("Timalka rework.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  overflow: hidden;
+  width: 100%;
+  
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+
+body {
+  display: inline;
+  text-align: center;
+
+}
+
+
+h1 a{
+  color: #c71585;
+  font-family: DrSugiyama;
+  font-size: 7.5rem;
+  text-decoration: none;
+  margin: 0;
+  padding:0;
+}
+
+li {
+  list-style: none;
+  margin: 0 auto;
+  padding: 10px 10px;
+  text-align: center;
+  display: inline-block; 
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+footer p {
+  font-family: Karla;
+  color: #B33771;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+footer a {
+  font-size: 1.5rem;
+  color: #B33771;
+  text-decoration-line: underline;
+  text-decoration-style: dashed;
+  text-decoration-color: #B33771;
+}
+
+/* H1 font */
+@font-face{
+   font-family: DrSugiyama;
+   src:url("dr-sugiyama.regular.ttf");
+
+}
+
+/* FOOTER font and NAVBAR font  */
+@font-face{
+   font-family: Karla;
+   src:url("karla.regular.ttf");
+}
+/*************************************************************************376*/
+ @media only screen and (max-width: 641px){
+  /* For mobile phones: */
+  
+  body{
+	display:block;	
+	height: 80vh;
+  }
+  
+  h1{
+	line-height: 6.5rem;
+  }
+  
+  .videos{
+	 overflow-y: auto;
+	 height: 72%;
+	 margin-top: 0;
+  }
+  
+  ul{
+	  padding:0;
+	  margin: 0 auto;	  
+  }
+  
+  li {
+     display: block; 
+  } 
+  
+  .responsive {
+	position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 35px;
+    height: 0;
+    overflow: hidden;
+  }
+ 
+  .responsive iframe{
+	position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+	padding-top: 5%;
+	/*padding bottom: 10%;*/
+  }  
+  
+ }
+
+/****************************************************************************/
+ @media only screen and (min-width: 642px) and (max-width: 1281px) { 
+  /* For tablets: */
+ 
+  body{
+	display: block;
+    height: 80vh ;
+  }
+  
+  h1{
+    line-height: 6.5rem;
+	margin:0;
+  }
+ 
+  .videos{
+	 overflow-y: auto;
+	 height: 85%;
+	 margin-top: 0;
+  }
+
+  ul{
+	  padding:0;
+	  margin: 0 auto;	  
+  }
+  
+}
